@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edullka | Inicio</title>
+  <script src="https://kit.fontawesome.com/dd0a564ea9.js" crossorigin="anonymous"></script>
+  <link rel="shorcut" href="images/carpa.ico" />
+  <link rel="icon" href="images/carpa.ico" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-white dark:bg-gray-800">
+  <div>
+    <!-- Header -->
+    <style>
+      header {
+        padding-top: 0.1px;
+      }
+    </style>
+    <header class="relative bg-scroll bg-white bg-center bg-repeat bg-cover">
+      <!-- Navbar -->
+      <nav class="fixed z-50 w-full bg-white shadow dark:bg-gray-900">
+        <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!-- Heroicon name: outline/menu | Menu open: "hidden", Menu closed: "block" -->
+                <svg class="block w-6 h-6 menu-button" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!-- Heroicon name: outline/x | Menu open: "block", Menu closed: "hidden" -->
+                <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start border-r-2 mr-6">
+              <div class="flex items-center flex-shrink-0 sm:flex">
+                <a href="https://joseniquen08.github.io/"><img class="block w-auto h-8 lg:hidden"
+                  src="images/logo-edullka-header.webp" alt="Workflow"></a>
+                <a href="https://joseniquen08.github.io/"><img class="hidden w-auto h-10 lg:block" style="filter: saturate(200%);"
+                  src="images/logo-edullka-header.webp" alt="Workflow"></a>
+              </div>
+              <div class="flex-1 hidden md:pr-6 sm:block sm:ml-6">
+                <style>
+                  @font-face {
+                    font-family: "Oswald";
+                    src: url("/font/Oswald-Medium.ttf");
+                  }
+                  .font-nav-1{
+                    font-family: 'Oswald';
+                  }
+                </style>
+                <div class="flex items-center justify-end space-x-4 font-nav-1">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="https://joseniquen08.github.io/" class="px-3 py-2 text-xl font-medium tracking-wide text-gray-600 uppercase rounded-md dark:text-gray-300 hover:bg-gray-700 hover:text-white">Inicio</a>
+                  <a href="https://joseniquen08.github.io/#campamentos"
+                    class="px-3 py-2 text-xl font-medium tracking-wide text-gray-600 uppercase rounded-md dark:text-gray-300 hover:bg-gray-700 hover:text-white">Campamentos</a>
+                  <a href="https://joseniquen08.github.io/#nosotros"
+                    class="px-3 py-2 text-xl font-medium tracking-wide text-gray-600 uppercase rounded-md dark:text-gray-300 hover:bg-gray-700 hover:text-white">Nosotros</a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button id="switchTheme" class="flex items-center justify-center w-10 h-10 text-yellow-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd">
+                  </path>
+                </svg>
+              </button>
+            </div> -->
+            <style>
+
+              .toggle-path {
+                  transition: background 0.3s ease-in-out;
+              }
+              .toggle-circle {
+                  top: 0.2rem;
+                  left: 0.25rem;
+                  transition: all 0.3s ease-in-out;
+              }
+              input:checked ~ .toggle-circle {
+                  transform: translateX(100%);
+              }
+              input:checked ~ .toggle-path {
+                  background-color:#81E6D9;
+              }
+            </style>
+            <div class="flex justify-center items-center">
+              <!-- <div class="font-medium font-nav text-base text-gray-600 dark:text-gray-300 ml-2 mr-2">MODO</div> -->
+              <label for="toogleButton" class="flex items-center cursor-pointer">
+                <!-- toggle -->
+                <div class="relative">
+                  <input id="toogleButton" type="checkbox" class="hidden" />
+                  <!-- path -->
+                  <div
+                    class="toggle-path bg-gray-200 w-9 h-5 rounded-full shadow-inner"
+                  ></div>
+                  <!-- crcle -->
+                  <div
+                    class="toggle-circle absolute w-3.5 h-3.5 bg-white rounded-full shadow inset-y-0 left-0"
+                  ></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden contenedor-menu sm:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="https://joseniquen08.github.io/" class="block px-3 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-700 dark:text-gray-300 hover:text-white">Inicio</a>
+            <a href="https://joseniquen08.github.io/#campamentos"
+              class="block px-3 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-700 dark:text-gray-300 hover:text-white">Campamentos</a>
+            <a href="https://joseniquen08.github.io/#nosotros"
+              class="block px-3 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-700 dark:text-gray-300 hover:text-white">Nosotros</a>
+          </div>
+        </div>
+      </nav>
+      <div class="fixed z-40 bottom-9 right-8">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full cursor-pointer wsp-button bg-greencode-wsp">
+          <i class="relative text-4xl text-white fab fa-whatsapp"></i>
+        </div>
+      </div>
+      <style>
+        .active{
+          transform: translate(0) !important;
+        }
+      </style>
+      <div class="fixed z-40 overflow-hidden bg-white contenedor-chat w-80 h-72 bottom-28 right-10 rounded-xl" style="transition: transform 0.3s ease-in-out;transform: translate(115%);">
+        <div class="relative flex flex-col justify-between w-full h-full bg-cover contenido-chat" style="background-image: url(images/wsp-wallpaper.jpg);">
+          <div class="z-10 flex items-center justify-start p-3 bg-gray-300 dark:bg-gray-600 top">
+            <div class="absolute cursor-pointer close-button top-5 right-5"><i class="text-2xl text-black fas fa-times dark:text-white"></i></div><img src="images/carpa.png" class="h-10 p-1 mr-3 bg-white border border-white w-11" style="border-radius: 50%;"/>
+            <div class="flex flex-col estado-chat"><strong class="block mb-1 text-lg font-medium leading-4 dark:text-white">Edullka</strong><span class="text-sm leading-3 dark:text-white">En línea</span></div>
+          </div>
+          <div class="z-10 flex items-center justify-start p-3 bg-gray-300 dark:bg-gray-600 bottom">
+            <textarea class="p-2 leading-5 bg-white border border-white border-solid outline-none appearance-none resize-none rounded-xl h-11" style="width: calc(100% - 35px);" id="mensaje" cols="30" rows="1" placeholder="Escribe un mensaje aquí"></textarea>
+            <div class="cursor-pointer send-button" id="send-button">
+              <i class="block ml-3 text-2xl transform rotate-45 dark:text-white bi bi-cursor-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <main class="mt-16 md:mx-14 lg:mx-24" style="font-family: 'Roboto', sans-serif;">
+      <style>
+        .imagen-content{
+          position: fixed;
+          background: rgba(0,0,0,.6);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translate(110%);
+          transition: transform .2s ease-in-out;
+          z-index: 1000;
+        }
+        .show{
+          transform: translate(0);
+        }
+        .agregar-imagen{
+          object-fit: contain;
+          width: 60%;
+          border-radius: 10px;
+          transform: scale(0);
+          transition: transform .3s .2s;
+        }
+        .showImage{
+          transform: scale(1);
+        }
+        .close{
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          width: 40px;
+          cursor: pointer;
+        }
+      </style>
+      <section class="imagen-content" alt="">
+        <img src="images/close.svg" alt="" class="close">
+        <img src="images/header-code-2.webp" alt="" class="agregar-imagen">
+      </section>
+        <div class="py-12 bg-white dark:bg-gray-800">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="text-center md:text-left">
+                    <h2 class="text-xl font-semibold tracking-wide text-yellow-500 uppercase">Más Información</h2>
+                    <p class="text-4xl font-bold leading-8 tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                        Campamento de Python
+                    </p>
+                    <!-- <div id="diaInicio">
+                      <h3 class="text-2xl mt-2 dark:text-white">Inicio: <i>{{message}}</i></h3>
+                    </div> -->
+                </div>
+
+                <div class="flex flex-col w-full mt-6 md:flex-row">
+                  <div class="flex flex-col items-center justify-center mx-auto bg-gray-100 md:flex-none w-60 h-60 lg:mx-0 dark:bg-gray-700 rounded-xl">
+                    <img src="/images/python.webp" alt="" class="object-contain w-48 h-48 xl:w-52 xl:h-52" />
+                  </div>
+                  <div class="px-4 mt-5 md:flex-grow md:mt-0 lg:px-6">
+                    <div class="mb-2 text-lg font-medium text-center text-orange-500 uppercase md:text-left">
+                      Programación
+                    </div>
+                    <div class="text-base text-justify text-gray-800 lg:text-left dark:text-gray-200">
+                      Python es un lenguaje de programación que te permite trabajar rápidamente e integrar sistemas de forma más eficaz. Este puede ser fácil de aprender, ya sea que programe por primera vez o tenga experiencia con otros lenguajes. (<a href="https://www.python.org/" target="_blank" class="text-blue-700 dark:text-blue-500">python.org</a>)
+                    </div>
+                    <div class="">
+                      <div class="flex flex-wrap w-full mt-3 text-sm lg:mt-1">
+                        <div class="px-2 py-1 my-1 mr-2 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-900">Multiparadigma</div>
+                        <div class="px-2 py-1 my-1 mr-2 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-900">Orientado a objetos</div>
+                        <div class="px-2 py-1 my-1 mr-2 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-900">Imperativo</div>
+                        <div class="px-2 py-1 my-1 mr-2 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-900">Funcional</div>
+                        <div class="px-2 py-1 my-1 mr-2 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-900">Reflexivo</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center w-full text-sm md:justify-start lg:mt-1">
+                      <div class="py-1 my-1 mr-2 dark:text-gray-400">Última versión:</div>
+                      <div class="flex items-center justify-center px-2 py-1 my-1 mr-2 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-900"><a href="https://www.python.org/downloads/release/python-391/" target="_blank">3.9.1</a></div>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center w-full mt-2 md:px-8 md:justify-end">
+                      <button class="flex items-center justify-center text-xl px-6 py-2 md:px-5 md:py-1.5 text-white bg-orange-500 dark:bg-yellow-500 rounded-md" type="submit"><a href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete ahora</a></button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full mt-8 mb-2">
+                  <div class="w-full">
+                    <h3 class="text-3xl font-semibold tracking-wide text-center text-yellow-500">Sobre el campamento</h3>
+                  </div>
+                </div>
+
+                <div class="mx-4 mt-6 overflow-hidden bg-white border border-gray-300 shadow dark:border-gray-800 dark:bg-gray-900 lg:mx-0 sm:rounded-lg">
+                  <div class="flex items-center justify-between px-4 py-5 sm:px-6">
+                    <h3 class="text-2xl font-medium leading-6 text-gray-900 dark:text-white">
+                      Detalles
+                    </h3>
+                    <h3 class="text-2xl font-bold bg-gray-100 p-2 rounded-lg leading-6 text-gray-800 dark:bg-gray-700 dark:text-white">FREE</h3>
+                  </div>
+                  <div class="border-t border-gray-300 dark:border-gray-200">
+                    <dl class="divide-y divide-gray-300">
+                      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-600 dark:text-gray-300">
+                          Duración
+                        </dt>
+                        <dd class="mt-1 text-base text-gray-900 dark:text-white sm:mt-0 sm:col-span-2">
+                          12 días (Lunes a Sábado) - 2 semanas
+                        </dd>
+                      </div>
+                      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                          Horas aproximadas
+                        </dt>
+                        <dd class="mt-1 text-base text-gray-900 dark:text-white sm:mt-0 sm:col-span-2">
+                          24 horas
+                        </dd>
+                      </div>
+                      <!-- <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-600 dark:text-gray-300">
+                          Inversión
+                        </dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 dark:text-white sm:col-span-2">
+                          <div>
+                            <span class="text-lg font-medium text-orange-500">S/</span>&nbsp<span class="text-2xl font-bold text-orange-500">60</span>&nbsp&nbsp&nbsp<span class="text-gray-400 line-through dark:text-gray-500">S/ 120</span>&nbsp&nbsp&nbsp<span class="text-sm font-semibold">50% dto</span>&nbsp&nbsp<span class="text-sm">(Alumnos UNI)</span>&nbsp&nbsp&nbsp<span id="app"><i class="text-lg fas fa-info-circle" v-bind:title="message"></i></span>
+                          </div>
+                          <div>
+                            <span class="text-lg font-medium text-orange-500">S/</span>&nbsp<span class="text-2xl font-bold text-orange-500">84</span>&nbsp&nbsp&nbsp<span class="text-gray-400 line-through dark:text-gray-500">S/ 120</span>&nbsp&nbsp&nbsp<span class="text-sm font-semibold">30% dto</span>&nbsp&nbsp<span class="text-sm">(Externos)</span>&nbsp&nbsp&nbsp<span id="app2"><i class="text-lg fas fa-info-circle" v-bind:title="message"></i></span>
+                          </div>
+                        </dd>
+                      </div> -->
+                      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                          Proyectos
+                        </dt>
+                        <dd class="mt-1 text-base text-gray-900 dark:text-white sm:mt-0 sm:col-span-2">
+                          Sí
+                        </dd>
+                      </div>
+                      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-600 dark:text-gray-300">
+                          Certificado
+                        </dt>
+                        <dd class="flex items-center justify-between mt-1 text-base text-gray-900 dark:text-white sm:mt-0 sm:col-span-2">
+                          <div class="flex items-center flex-1 w-0">
+                            <span class="flex-1 w-0">
+                              Sí (Participación)
+                            </span>
+                          </div>
+                          <!-- <div class="btnOpen flex-shrink-0 ml-4 cursor-pointer rounded-md bg-orange-500 dark:bg-yellow-500 px-4 py-1.5">
+                            <p class="font-medium text-white">
+                              Ver Certificado
+                            </p>
+                          </div> -->
+                        </dd>
+                      </div>
+                      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                          Tutores
+                        </dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
+                          <ul class="border border-gray-200 divide-y divide-gray-300 rounded-md">
+
+                            <li class="flex items-center py-3 pl-3 pr-4 text-sm">
+                                <div class="flex items-center justify-center flex-initial w-10 h-10">
+                                  <img src="/images/perfil-jhomar astuyauri.webp" alt="" class="object-cover w-10 h-10 rounded-full" />
+                                </div>
+                                <div class="flex-col flex-initial md:flex-row lg:text-black md:flex md:items-center md:justify-center">
+                                  <div class="ml-4 text-base font-base dark:text-white">Jhomar Astuyauri</div>
+                                </div>
+                                <div class="flex-auto">
+                                  <ul class="flex items-center justify-end w-full">
+                                    <li class="mx-3"><a href="https://www.facebook.com/jhomar.astuyauriherencia.12/" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-facebook"></i></a></li>
+                                    <li class="mx-3"><a href="https://www.linkedin.com/in/jhomar-astuyauri/" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-linkedin"></i></a></li>
+                                    <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-github"></i></a></li>
+                                  </ul>
+                                </div>
+                            </li>
+
+                            <li class="flex items-center py-3 pl-3 pr-4 text-sm">
+                              <div class="flex items-center justify-center flex-initial w-10 h-10">
+                                <img src="/images/perfil-josé guerra.webp" alt="" class="object-cover w-10 h-10 rounded-full" />
+                              </div>
+                              <div class="flex-col flex-initial md:flex-row lg:text-black md:flex md:items-center md:justify-center">
+                                <div class="ml-4 text-base font-base dark:text-white">José Guerra</div>
+                              </div>
+                              <div class="flex-auto">
+                                <ul class="flex items-center justify-end w-full">
+                                  <li class="mx-3"><a href="https://www.facebook.com/josecarlos.guerramartinez.5/" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-facebook"></i></a></li>
+                                  <li class="mx-3"><a href="https://www.linkedin.com/in/jos%C3%A9-carlos-guerra-martinez-7903b41b2/" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-linkedin"></i></a></li>
+                                  <li class="mx-3"><a href="https://github.com/JoCGM09" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-github"></i></a></li>
+                                </ul>
+                              </div>
+                            </li>
+
+                            <li class="flex items-center py-3 pl-3 pr-4 text-sm">
+                              <div class="flex items-center justify-center flex-initial w-10 h-10">
+                                <img src="/images/perfil-josé ñiquen.webp" alt="" class="object-cover w-10 h-10 rounded-full" />
+                              </div>
+                              <div class="flex-col flex-initial md:flex-row lg:text-black md:flex md:items-center md:justify-center">
+                                <div class="ml-4 text-base font-base dark:text-white">José Ñiquen</div>
+                              </div>
+                              <div class="flex-auto">
+                                <ul class="flex items-center justify-end w-full">
+                                  <li class="mx-3"><a href="https://www.facebook.com/jose.niquen.f" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-facebook"></i></a></li>
+                                  <li class="mx-3"><a href="https://www.linkedin.com/in/jose-ñiquen" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-linkedin"></i></a></li>
+                                  <li class="mx-3"><a href="https://github.com/joseniquen08" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-github"></i></a></li>
+                                </ul>
+                              </div>
+                            </li>
+
+                            <li class="flex items-center py-3 pl-3 pr-4 text-sm">
+                              <div class="flex items-center justify-center flex-initial w-10 h-10 rounded-full">
+                                <img src="/images/user.svg" alt="" class="object-fit w-8 h-8" />
+                              </div>
+                              <div class="flex-col flex-initial md:flex-row lg:text-black md:flex md:items-center md:justify-center">
+                                <div class="ml-4 text-base font-base dark:text-white">Cristopher Rufasto</div>
+                              </div>
+                              <div class="flex-auto">
+                                <ul class="flex items-center justify-end w-full">
+                                  <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-facebook"></i></a></li>
+                                  <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-linkedin"></i></a></li>
+                                  <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-github"></i></a></li>
+                                </ul>
+                              </div>
+                            </li>
+
+                            <li class="flex items-center py-3 pl-3 pr-4 text-sm">
+                              <div class="flex items-center justify-center flex-initial w-10 h-10 rounded-full">
+                                <img src="/images/user.svg" alt="" class="object-fit w-8 h-8" />
+                              </div>
+                              <div class="flex-col flex-initial md:flex-row lg:text-black md:flex md:items-center md:justify-center">
+                                <div class="ml-4 text-base font-base dark:text-white">Ailton Salguero</div>
+                              </div>
+                              <div class="flex-auto">
+                                <ul class="flex items-center justify-end w-full">
+                                  <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-facebook"></i></a></li>
+                                  <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-linkedin"></i></a></li>
+                                  <li class="mx-3"><a href="#" target="_blank"><i class="text-2xl text-gray-400 hover:text-gray-500 fab fa-github"></i></a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="flex items-center py-3 pl-3 pr-4">
+                              <span class="underline text-sm md:text-base dark:text-white">¿Interesado en ser tutor?</span>&nbsp&nbsp&nbsp
+                              <div class="px-6 py-1.5 font-medium text-white bg-orange-500 dark:bg-yellow-500 rounded-md">
+                                <a href="https://forms.gle/QhZuG38Bxg4tNVE39" target="_blank" class="text-center text-sm md:text-base">Click aquí</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+
+                <div class="mx-4 mt-10 overflow-hidden bg-white border border-gray-300 shadow dark:border-gray-800 dark:bg-gray-900 lg:mx-0 sm:rounded-lg">
+                  <div class="px-4 py-5 sm:px-6">
+                    <h3 class="text-2xl font-medium leading-6 text-gray-900 dark:text-white">
+                      Plan de Estudios
+                    </h3>
+                  </div>
+                  <div class="border-t border-gray-300 dark:border-gray-200">
+                    <div class="grid grid-flow-row text-center md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 md:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 1</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>¿Qué capacidades tiene Python?</li>
+                          <li>¿En qué áreas se puede usar Python?</li>
+                          <li>¿Qué puedo crear con Python?</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 lg:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 2</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Gestor de paquetes pip install.</li>
+                          <li>Entorno virtual.</li>
+                          <li>Repositorios git hub.</li>
+                          <li>Tipos de datos (booleano, entero, flotante, listas, tuplas, diccionarios, conjuntos SET)</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 lg:border-none md:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 3</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Entrada y salida estándar.</li>
+                          <li>Operadores, flujo de ejecución, sentencias condicionales, bucles, for y while.</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 lg:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 4</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Métodos de listas, tuplas y diccionarios.</li>
+                          <li>Introducción a las funciones.</li>
+                          <li>Manejo de errores.</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 md:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 5</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>POO: clases y objetos, herencia, composición.</li>
+                          <li>Módulos vs Clases.</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 lg:border-t">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 6</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Manejar ficheros de datos con CSV.</li>
+                          <li>Programación funcional (lambda, map, reviews, filter, zip)</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 md:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 7</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Estructura de datos.</li>
+                          <li>Pilas, colas, listas enlazadas, árboles, binario, grafos.</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 lg:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 8</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>MVC con flask.</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-b border-gray-300 dark:border-gray-200 md:border-none lg:border-b">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 9</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Numpy, mathplotlib y pandas.</li>
+                        </ul>
+                      </div>
+                      <div class="items-center justify-center hidden lg:flex">
+
+                      </div>
+                      <div class="flex flex-col items-center justify-center px-8 py-4 border-gray-300 dark:border-gray-200 md:border-l lg:border-r">
+                        <p class="mb-2 text-xl font-medium text-orange-500">Sección 10</p>
+                        <ul class="text-base dark:text-gray-100">
+                          <li>Presentación de Proyectos.</li>
+                          <li>Cierre del campamento.</li>
+                        </ul>
+                      </div>
+                      <div class="items-center justify-center hidden border-gray-300 dark:border-gray-200 lg:flex lg:border-t">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full mt-12 mb-4">
+                  <div class="w-full">
+                    <h3 class="text-3xl font-semibold tracking-wide text-center text-yellow-500">Conoce Python</h3>
+                  </div>
+                </div>
+
+                <style>
+                  .code {
+                    font-family: Hack, monospace;
+                  }
+                </style>
+                <div class="flex flex-col items-center justify-center px-5 py-4 lg:flex-row">
+                  <div class="text-gray-400 bg-white border border-gray-200 rounded-lg shadow-md min-w-max dark:border-gray-700 dark:bg-gray-900">
+                      <div class="px-5 py-3 border-b border-gray-200 dark:border-gray-800">
+                          <div class="inline-block w-3 h-3 mr-2 bg-red-500 rounded-full"></div>
+                          <div class="inline-block w-3 h-3 mr-2 bg-yellow-300 rounded-full"></div>
+                          <div class="inline-block w-3 h-3 mr-2 bg-green-400 rounded-full"></div>
+                      </div>
+                      <div class="px-5 py-6 break-all text-sm md:text-base xl:text-lg code">
+                        <p><span class="text-redcode dark:text-greencode">print</span>(<span class="text-greencode-light dark:text-bluecode">"Hola, yo soy Python"</span>)</p>
+                        <br>
+                        <p><span class="dark:text-bluecode text-greencode-light">nombre</span><span class="dark:text-greencode text-redcode"> = input</span>(<span class="dark:text-bluecode text-greencode-light">'¿Cuál es tu nombre?\n'</span>)</p>
+                        <p><span class="text-redcode dark:text-greencode">print</span>(<span class="text-greencode-light dark:text-bluecode">'Hola, %s.'</span> <span class="text-redcode dark:text-greencode">%</span> <span class="text-greencode-light dark:text-bluecode">nombre</span>)</p>
+                      </div>
+                  </div>
+
+                  <div class="mx-12 mt-8 text-center lg:mt-0 lg:text-left">
+                    <h3 class="text-xl text-orange-500">Rápido y fácil de aprender</h3>
+                    <p class="text-gray-800 dark:text-gray-200">Los programadores experimentados en cualquier otro idioma pueden aprender Python muy rápidamente, y los principiantes encuentran fácil de aprender la sintaxis limpia y la estructura de sangría.</p>
+                    <br>
+                    <button type="button" class="px-2 py-1 text-gray-500 border border-yellow-500 rounded-lg dark:text-gray-200 dark:bg-yellow-500"><a href="https://repl.it/@joseniquen/EdullkaWeb-1" target="_blank">Prueba aquí</a></button>
+                  </div>
+                </div>
+
+                <div class="flex flex-col-reverse items-center justify-center px-5 py-4 lg:flex-row">
+                  <div class="mx-12 mt-8 text-center lg:mt-0 lg:text-right">
+                    <h3 class="text-xl text-orange-500">Todo el flujo que esperabas</h3>
+                    <p class="text-gray-800 dark:text-gray-200">Python conoce las declaraciones de flujo de control habituales que se declaran en otros lenguajes — if, for, while y range — con algunos de sus propios cambios, por supuesto.</p>
+                    <br>
+                    <button type="button" class="px-2 py-1 text-gray-500 border border-yellow-500 rounded-lg dark:text-gray-200 dark:bg-yellow-500"><a href="https://repl.it/@joseniquen/EdullkaWeb-2" target="_blank">Prueba aquí</a></button>
+                  </div>
+                  
+                  <div class="text-gray-400 bg-white border border-gray-200 rounded-lg shadow-md min-w-max dark:border-gray-700 dark:bg-gray-900">
+                    <div class="px-5 py-3 border-b border-gray-200 dark:border-gray-800">
+                        <div class="inline-block w-3 h-3 mr-2 bg-red-500 rounded-full"></div>
+                        <div class="inline-block w-3 h-3 mr-2 bg-yellow-300 rounded-full"></div>
+                        <div class="inline-block w-3 h-3 mr-2 bg-green-400 rounded-full"></div>
+                    </div>
+                    <div class="px-5 py-6 break-all text-sm md:text-base xl:text-lg code">
+                      <p><span class="text-redcode-light dark:text-bluecode">numeros </span><span class="text-bluecode-light dark:text-greencode">= </span>[<span class="text-browncode dark:text-redcode-dark">2</span>,<span class="text-browncode dark:text-redcode-dark"> 4</span>,<span class="text-browncode dark:text-redcode-dark"> 6</span>,<span class="text-browncode dark:text-redcode-dark"> 8</span>]</p>
+                      <p><span class="text-redcode-light dark:text-bluecode">producto </span><span class="text-bluecode-light dark:text-greencode">= </span><span class="text-browncode dark:text-redcode-dark">1</span></p>
+                      <p><span class="text-purplecode dark:text-yellowcode">for </span><span class="text-redcode-light dark:text-bluecode">numero </span><span class="text-purplecode dark:text-yellowcode">in </span><span class="text-redcode-light dark:text-bluecode">numeros</span>:</p>
+                      <p>&nbsp&nbsp&nbsp&nbsp<span class="text-redcode-light dark:text-bluecode">producto </span><span class="text-bluecode-light dark:text-greencode">= </span><span class="text-redcode-light dark:text-bluecode">producto </span><span class="text-bluecode-light dark:text-greencode">* </span><span class="text-redcode-light dark:text-bluecode">numero</span></p>
+                      <br>
+                      <p><span class="text-redcode dark:text-greencode">print</span>(<span class="dark:text-bluecode text-greencode-light">'El producto es:'</span>, <span class="text-redcode-light dark:text-bluecode">producto</span>)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-center justify-center px-5 py-4 lg:flex-row">                  
+                  <div class="text-gray-400 bg-white border border-gray-200 rounded-lg shadow-md min-w-max dark:border-gray-700 dark:bg-gray-900">
+                    <div class="px-5 py-3 pr-20 border-b border-gray-200 dark:border-gray-800">
+                        <div class="inline-block w-3 h-3 mr-2 bg-red-500 rounded-full"></div>
+                        <div class="inline-block w-3 h-3 mr-2 bg-yellow-300 rounded-full"></div>
+                        <div class="inline-block w-3 h-3 mr-2 bg-green-400 rounded-full"></div>
+                    </div>
+                    <div class="px-5 py-6 pr-20 break-all text-sm md:text-base xl:text-lg code">
+                      <p><span class="text-purplecode dark:text-yellowcode">def </span><span class="text-bluecode-light dark:text-bluecode">fibonacci</span>(<span class="text-bluecode-light dark:text-bluecode">n</span>):</p>
+                      <p>&nbsp&nbsp&nbsp&nbsp<span class="text-redcode-light dark:text-bluecode">a</span>, <span class="text-redcode-light dark:text-bluecode">b </span><span class="text-bluecode-light dark:text-greencode">= </span><span class="text-browncode dark:text-redcode-dark">0</span>, <span class="text-browncode dark:text-redcode-dark">1</span></p>
+                      <p>&nbsp&nbsp&nbsp&nbsp<span class="text-purplecode dark:text-yellowcode">while </span><span class="text-redcode-light dark:text-bluecode">a </span><span class="dark:text-greencode">&lt;</span><span class="text-redcode-light dark:text-bluecode"> n</span>:</p>
+                      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-redcode dark:text-greencode">print</span>(<span class="text-redcode-light dark:text-bluecode">a</span>, <span class="text-redcode-light dark:text-bluecode"> end</span><span class="text-bluecode-light dark:text-greencode">=</span><span class="text-greencode-dark dark:text-bluecode">' '</span>)</p>
+                      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-redcode-light dark:text-bluecode">a</span>, <span class="text-redcode-light dark:text-bluecode">b </span><span class="text-bluecode-light dark:text-greencode">= </span><span class="text-redcode-light dark:text-bluecode">b</span>, <span class="text-redcode-light dark:text-bluecode">a</span><span class="text-bluecode-light dark:text-greencode">+</span><span class="text-redcode-light dark:text-bluecode">b</span></p>
+                      <p>&nbsp&nbsp&nbsp&nbsp<span class="text-redcode dark:text-greencode">print</span>()</p>
+                      <p><span class="text-redcode-light dark:text-bluecode">fibonacci</span>(<span class="text-browncode dark:text-redcode-dark">1000</span>)</p>
+                    </div>
+                  </div>
+
+                  <div class="mx-12 mt-8 text-center lg:mt-0 lg:text-left">
+                    <h3 class="text-xl text-orange-500">Funciones definidas</h3>
+                    <p class="text-gray-800 dark:text-gray-200">El núcleo de la programación extensible es definir funciones. Python permite argumentos obligatorios y opcionales, argumentos de palabras clave e incluso listas de argumentos arbitrarios.</p>
+                    <br>
+                    <button type="button" class="px-2 py-1 text-gray-500 border border-yellow-500 rounded-lg dark:text-gray-200 dark:bg-yellow-500"><a href="https://repl.it/@joseniquen/EdullkaWeb-3" target="_blank">Prueba aquí</a></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-gray-300 dark:bg-gray-800 px-14">
+      <div class="grid w-full grid-cols-1 md:grid-cols-2">
+        <div class="w-full my-4 text-base text-center text-gray-500 dark:text-white md:text-left">
+          © 2021 Edullka. Todos los derechos reservados.
+        </div>
+        <ul class="flex items-center justify-center w-full mb-8 md:my-4 md:justify-end">
+          <li class="mx-3"><a href="https://www.facebook.com/Edullka-105302951500555" target="_blank"><i class="text-4xl text-gray-400 md:text-2xl lg:text-xl hover:text-gray-500 fab fa-facebook"></i></a></li>
+          <li class="mx-3"><a href="#" target="_blank"><i class="text-4xl text-gray-400 md:text-2xl lg:text-xl hover:text-gray-500 fas fa-envelope"></i></a></li>
+          <li class="mx-3"><a href="https://github.com/edullka" target="_blank"><i class="text-4xl text-gray-400 md:text-2xl lg:text-xl hover:text-gray-500 fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="js/simplyCountdown.min.js"></script>
+<script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</html>

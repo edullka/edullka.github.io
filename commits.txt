@@ -1,0 +1,17 @@
+commit 572c107fcade13b37affc04c156f37a3beedb640
+Author: Jose Niquen <j.armando0807@gmail.com>
+Date:   Mon Feb 8 22:32:05 2021 -0500
+
+    imagenes a webp y correcion de enlaces
+
+commit edafa4d54a316714fddfc3060a1f4c302415c6fe
+Author: Jose Niquen <j.armando0807@gmail.com>
+Date:   Mon Feb 8 21:56:59 2021 -0500
+
+    imagenes redimensionadas
+
+commit 027fdcff90d9045e654e2637c228ecd23a3411a4
+Author: Jose Niquen <j.armando0807@gmail.com>
+Date:   Mon Feb 8 21:34:36 2021 -0500
+
+    Primer commit

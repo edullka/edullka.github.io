@@ -1,0 +1,14 @@
+Botones del header. (LISTO)
+Deshabilitar los cards de java y c. (LISTO)
+Ver columnas de nosotros (centrar). (LISTO)
+Botón de inscribirse en información del campamento. (LISTO)
+Redes sociales al costado de los mentores. (LISTO)
+Botón ver certificado, al costado. (LISTO) Falta la imagen del certificado
+30% flotante, precio orginial 120. Hover con cuadro ("Oferta especial limitada"). (84) externo (LISTO)
+50% flotante, precio orginial 120. Hover con cuadro ("Oferta especial limitada"). (60) alumno uni (LISTO)
+botón sé un mentor abajo de todos los tutores (formulario) (LISTO)
+Pendiente ver premios del campamento.
+Botón de wsp. (LISTO)
+cambiar a oscuro botón como el de tailwind.
+Imagen del header (pendiente).
+Falta realizar los formularios y vincularlos a los enlaces
